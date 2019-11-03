@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" type="text/css" />
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="Sidebar.js">
 
 <body>
 
@@ -34,7 +33,7 @@
 
     <!-- Sidebar on small screens when clicking the menu icon -->
     <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
-        style="display:none" id="mySidebar">
+        style="display:none; z-index:2048" id="mySidebar">
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
             ×</a>
         <a href="#education" class="w3-bar-item w3-button">EDUCATION</a>
@@ -42,6 +41,22 @@
         <a href="#technologies" class="w3-bar-item w3-button">TECHNOLOGIES</a>
         <a href="#activities" class="w3-bar-item w3-button">ACTIVITIES</a>
     </nav>
+
+    <script>
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
 
     <!-- Header with full-height image -->
     <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
@@ -59,7 +74,7 @@
             <div class="container left">
                 <div class="content">
                     <h2>2012 - 2017</h2>
-                    <p>Mahavajiravudh Songkhla School</p>
+                    <p>Science Math Ability Program, Mahavajiravudh Songkhla School</p>
                 </div>
             </div>
             <div class="container right">
@@ -78,29 +93,29 @@
     <div class="w3-container w3-light-grey" style="padding:32px 16px" id="about me">
         <h3 class="w3-center">ABOUT ME</h3>
         <p class="w3-center w3-large"><b>Vorrapong Kertnat</b></p>
-        <p class="w3-center w3-large">
-            <hr>
-            </hr>
-        </p>
+        <p class="w3-center w3-large"></p>
+        <hr>
         <p class="w3-center"><b>Date of Birth : </b>13 January 1998</p>
         <p class="w3-center"><b>Age : </b>21 years old</p>
         <p class="w3-center"><b>Nationality : </b>Thai</p>
         <p class="w3-center"><b>Religion : </b>Buddhist</p>
         <p class="w3-center"><b>Personality : </b>Responsible, Eager to learn new technologies</p>
         <p class="w3-center"><b>Hobbies : </b>Playing Guitar, Shooting, Read the Technology Articles</p>
+        <p class="w3-center"><b>Language : </b>Thai ( Native ) , English ( Intermediate )</p>
+        <p class="w3-center"><b>Email : </b>6010110319@psu.ac.th</p>
         <hr>
-        </hr>
         <div class="w3-xlarge w3-section w3-center">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-github w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
+            <a href="https://www.facebook.com/Iceman951"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/ice_schecter/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://github.com/iceman951"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/วรพงษ์-เกิดเนตร-226892141"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i><a></a>
         </div>
     </div>
 
     <!-- Technologies Section -->
     <div class="w3-container" style="padding:32px 16px" id="technologies">
-        <h3 class="w3-center">Technologies</h3>
+        <h3 class="w3-center">TECHNOLOGIES</h3>
 
         <div class="w3-column-padding w3-center" style="margin-top:64px">
             <div class="w3-quarter w3-padding">
